@@ -9,7 +9,7 @@ module.exports = (req, res) => {
     if (err) {
           res.send('文件读取失败');
       } else {
-          res.json(data);
+          res.json(JSON.parse(data));
       }
   });
 
